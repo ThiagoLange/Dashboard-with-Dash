@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 from dash import dcc, html
 
-df = pd.read_csv('clean-netflix_titles.csv')
+df = pd.read_csv('data/netflix_titles.csv')
 
 # Filter out entries without country information and if there are multiple production countries,
 # consider the first one as the production country

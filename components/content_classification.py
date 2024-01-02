@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 from dash import dcc, html
 
-df = pd.read_csv('clean-netflix_titles.csv')
+df = pd.read_csv('data/netflix_titles.csv')
 
 # Split the listed_in column and explode to handle multiple genres
 df['listed_in'] = df['listed_in'].str.split(', ')
