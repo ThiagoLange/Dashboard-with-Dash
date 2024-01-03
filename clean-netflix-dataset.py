@@ -17,5 +17,5 @@ df.drop_duplicates(inplace=True)
 df['data_added'] = pd.to_datetime(df['date_added'].str.strip())
 
 # Save tthe clean dataset
-df.to_csv('data/clean-netflix_titles.csv', index=False)
+df.to_csv('data/netflix_titles.csv', index=False)
 
